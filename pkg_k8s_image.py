@@ -36,7 +36,8 @@ images = [
 
 
 os.system("rm %s -rf&& mkdir %s" % (target_dir, target_dir))
-os.system("rm %s " % (pkg))
+os.system("rm %s -rf" % (pkg))
+
 for image_entry in images:
     print(repo_entry)
     image_url = '%s/%s' % (host, image_entry)
