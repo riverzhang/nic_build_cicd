@@ -4,7 +4,7 @@ import sys
 import os
 
 
-host = "172.100.200.208"
+host = "hub.easystack.io"
 user = "admin"
 password = "Passw0rd"
 target_dir = "/var/www/html/k8s-images/images/"
