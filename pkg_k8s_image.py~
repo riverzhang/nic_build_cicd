@@ -39,12 +39,12 @@ os.system("rm %s -rf&& mkdir %s" % (target_dir, target_dir))
 os.system("rm %s -rf" % (pkg))
 
 for image_entry in images:
-    print(image_entry)
+    print(repo_entry)
     image_url = '%s/%s' % (host, image_entry)
     os.system('docker pull %s' % image_url)
-    target_url = "%s/%s" % ("hub.easystack.io", image_entry)
+    target_url = "%s/%s:%s" % ("hub.easystack.io", repo_entry, tag_entry)
     os.system('docker tag %s %s' % (image_url, target_url))
-    image_name = image_entry.split('/')[1] 
+    image_name = repo_entry.split('/')[1] 
     target_file = "%s/%s.tar" % (target_dir, image_name)
     os.system('docker save %s > %s' % (target_url, target_file))
     print(target_file)
