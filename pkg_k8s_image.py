@@ -8,7 +8,7 @@ host = "hub.easystack.io"
 user = "admin"
 password = "Passw0rd"
 target_dir = "/var/www/html/k8s-images/images/"
-pkg = "/var/html/html/k8s-images/images.tgz"
+pkg = "/var/www/html/k8s-images/images.tgz"
 
 
 # Get all repositories
