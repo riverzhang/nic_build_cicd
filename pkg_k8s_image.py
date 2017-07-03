@@ -29,7 +29,7 @@ images = [
         "captain/mongo:latest",
         "captain/defaultbackend:1.0",
         "captain/nginx-ingress-controller:0.8.4",
-        "captain/kubernetes-dashboard-amd64:v1.6.x",
+        "captain/kubernetes-dashboard-amd64:v1.6.x.head",
         "captain/fluentd-elasticsearch:1.23",
         "captain/elasticsearch:cap2.4.4",
         ]
